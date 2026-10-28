@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penyaringan Usia Pengunjung</title>
+
+    <link rel="stylesheet" href="Penyaringan_Usia_Pengunjung.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Seleksi Pengunjung</h2>
+
+        <div class="form-box">
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" placeholder="Masukkan nama">
+            </div>
+
+            <div class="form-group">
+                <label for="usia">Usia</label>
+                <input type="number" id="usia" placeholder="Masukkan usia" min="0">
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="proses">PROSES</button>
+                <button type="button" id="clear">CLEAR</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dialog hasil pemeriksaan -->
+    <div class="overlay" id="overlay">
+        <div class="dialog">
+            <p id="pesan"></p>
+            <button type="button" id="ok">OK</button>
+        </div>
+    </div>
+
+    <!-- Memanggil jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Memanggil JavaScript program -->
+    <script src="Penyaringan_Usia_Pengunjung.js"></script>
+
+</body>
+</html>
+

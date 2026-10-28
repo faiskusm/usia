@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 490px;
+    max-width: 95%;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: rgb(115, 188, 210);
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    gap: 12px;
+}
+
+label {
+    width: 75px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 11px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#proses {
+    background-color: #808080;
+    color: white;
+}
+
+#proses:hover {
+    background-color: #555555;
+}
+
+#clear {
+    background-color: #dddddd;
+    color: #222222;
+}
+
+#clear:hover {
+    background-color: #bbbbbb;
+}
+
+/* Latar belakang dialog */
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Kotak dialog */
+.dialog {
+    width: 320px;
+    max-width: 90%;
+    padding: 22px;
+    background-color: white;
+    border: 1px solid #777;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dialog p {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+#ok {
+    background-color: #dddddd;
+    color: #222222;
+    border: 1px solid #999999;
+}
+
+#ok:hover {
+    background-color: #bbbbbb;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 18px;
+    }
+
+    label {
+        width: 60px;
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+}
